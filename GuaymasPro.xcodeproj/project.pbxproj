@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4F64A6E1CC6F84600002F87 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A6D1CC6F84600002F87 /* SwiftyJSON.swift */; };
+		B4F64A711CC6F88100002F87 /* NextNoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A6F1CC6F88100002F87 /* NextNoticiasViewController.swift */; };
+		B4F64A721CC6F88100002F87 /* NoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A701CC6F88100002F87 /* NoticiasViewController.swift */; };
+		B4F64A741CC6F90200002F87 /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A731CC6F90200002F87 /* Noticia.swift */; };
+		B4F64A761CC6F91D00002F87 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A751CC6F91D00002F87 /* NetworkUtility.swift */; };
+		B4F64A781CC6F9FA00002F87 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A771CC6F9FA00002F87 /* Encoding.swift */; };
+		D0C410111CC5DBB0001D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */; };
+		D0C410131CC5DBB0001D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410121CC5DBB0001D6AFF /* ViewController.swift */; };
+		D0C410161CC5DBB0001D6AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C410141CC5DBB0001D6AFF /* Main.storyboard */; };
+		D0C410191CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0C410171CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld */; };
+		D0C4101B1CC5DBB0001D6AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */; };
+		D0C4101E1CC5DBB0001D6AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */; };
+		D0C410291CC5DBB0001D6AFF /* GuaymasProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410281CC5DBB0001D6AFF /* GuaymasProTests.swift */; };
+		D0C410341CC5DBB0001D6AFF /* GuaymasProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410331CC5DBB0001D6AFF /* GuaymasProUITests.swift */; };
+		D0FEFE431CC6958700F85155 /* RadioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FEFE421CC6958700F85155 /* RadioController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0C410251CC5DBB0001D6AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0C410051CC5DBB0001D6AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C4100C1CC5DBB0001D6AFF;
+			remoteInfo = GuaymasPro;
+		};
+		D0C410301CC5DBB0001D6AFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0C410051CC5DBB0001D6AFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0C4100C1CC5DBB0001D6AFF;
+			remoteInfo = GuaymasPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4F64A6D1CC6F84600002F87 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
+		B4F64A6F1CC6F88100002F87 /* NextNoticiasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextNoticiasViewController.swift; sourceTree = "<group>"; };
+		B4F64A701CC6F88100002F87 /* NoticiasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasViewController.swift; sourceTree = "<group>"; };
+		B4F64A731CC6F90200002F87 /* Noticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
+		B4F64A751CC6F91D00002F87 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+		B4F64A771CC6F9FA00002F87 /* Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
+		D0C4100D1CC5DBB0001D6AFF /* GuaymasPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuaymasPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0C410121CC5DBB0001D6AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0C410151CC5DBB0001D6AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0C410181CC5DBB0001D6AFF /* GuaymasPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuaymasPro.xcdatamodel; sourceTree = "<group>"; };
+		D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0C4101D1CC5DBB0001D6AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0C4101F1CC5DBB0001D6AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C410241CC5DBB0001D6AFF /* GuaymasProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuaymasProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C410281CC5DBB0001D6AFF /* GuaymasProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaymasProTests.swift; sourceTree = "<group>"; };
+		D0C4102A1CC5DBB0001D6AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C4102F1CC5DBB0001D6AFF /* GuaymasProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuaymasProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C410331CC5DBB0001D6AFF /* GuaymasProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuaymasProUITests.swift; sourceTree = "<group>"; };
+		D0C410351CC5DBB0001D6AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FEFE421CC6958700F85155 /* RadioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0C4100A1CC5DBB0001D6AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C410211CC5DBB0001D6AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C4102C1CC5DBB0001D6AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0C410041CC5DBB0001D6AFF = {
+			isa = PBXGroup;
+			children = (
+				D0C4100F1CC5DBB0001D6AFF /* GuaymasPro */,
+				D0C410271CC5DBB0001D6AFF /* GuaymasProTests */,
+				D0C410321CC5DBB0001D6AFF /* GuaymasProUITests */,
+				D0C4100E1CC5DBB0001D6AFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0C4100E1CC5DBB0001D6AFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0C4100D1CC5DBB0001D6AFF /* GuaymasPro.app */,
+				D0C410241CC5DBB0001D6AFF /* GuaymasProTests.xctest */,
+				D0C4102F1CC5DBB0001D6AFF /* GuaymasProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0C4100F1CC5DBB0001D6AFF /* GuaymasPro */ = {
+			isa = PBXGroup;
+			children = (
+				B4F64A771CC6F9FA00002F87 /* Encoding.swift */,
+				B4F64A731CC6F90200002F87 /* Noticia.swift */,
+				B4F64A751CC6F91D00002F87 /* NetworkUtility.swift */,
+				B4F64A6D1CC6F84600002F87 /* SwiftyJSON.swift */,
+				D0FEFE411CC6956B00F85155 /* ViewControllers */,
+				D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */,
+				D0C410141CC5DBB0001D6AFF /* Main.storyboard */,
+				D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */,
+				D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */,
+				D0C4101F1CC5DBB0001D6AFF /* Info.plist */,
+				D0C410171CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld */,
+			);
+			path = GuaymasPro;
+			sourceTree = "<group>";
+		};
+		D0C410271CC5DBB0001D6AFF /* GuaymasProTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0C410281CC5DBB0001D6AFF /* GuaymasProTests.swift */,
+				D0C4102A1CC5DBB0001D6AFF /* Info.plist */,
+			);
+			path = GuaymasProTests;
+			sourceTree = "<group>";
+		};
+		D0C410321CC5DBB0001D6AFF /* GuaymasProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0C410331CC5DBB0001D6AFF /* GuaymasProUITests.swift */,
+				D0C410351CC5DBB0001D6AFF /* Info.plist */,
+			);
+			path = GuaymasProUITests;
+			sourceTree = "<group>";
+		};
+		D0FEFE411CC6956B00F85155 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4F64A6F1CC6F88100002F87 /* NextNoticiasViewController.swift */,
+				B4F64A701CC6F88100002F87 /* NoticiasViewController.swift */,
+				D0C410121CC5DBB0001D6AFF /* ViewController.swift */,
+				D0FEFE421CC6958700F85155 /* RadioController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0C4100C1CC5DBB0001D6AFF /* GuaymasPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C410381CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasPro" */;
+			buildPhases = (
+				D0C410091CC5DBB0001D6AFF /* Sources */,
+				D0C4100A1CC5DBB0001D6AFF /* Frameworks */,
+				D0C4100B1CC5DBB0001D6AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuaymasPro;
+			productName = GuaymasPro;
+			productReference = D0C4100D1CC5DBB0001D6AFF /* GuaymasPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0C410231CC5DBB0001D6AFF /* GuaymasProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C4103B1CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasProTests" */;
+			buildPhases = (
+				D0C410201CC5DBB0001D6AFF /* Sources */,
+				D0C410211CC5DBB0001D6AFF /* Frameworks */,
+				D0C410221CC5DBB0001D6AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0C410261CC5DBB0001D6AFF /* PBXTargetDependency */,
+			);
+			name = GuaymasProTests;
+			productName = GuaymasProTests;
+			productReference = D0C410241CC5DBB0001D6AFF /* GuaymasProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0C4102E1CC5DBB0001D6AFF /* GuaymasProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0C4103E1CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasProUITests" */;
+			buildPhases = (
+				D0C4102B1CC5DBB0001D6AFF /* Sources */,
+				D0C4102C1CC5DBB0001D6AFF /* Frameworks */,
+				D0C4102D1CC5DBB0001D6AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0C410311CC5DBB0001D6AFF /* PBXTargetDependency */,
+			);
+			name = GuaymasProUITests;
+			productName = GuaymasProUITests;
+			productReference = D0C4102F1CC5DBB0001D6AFF /* GuaymasProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0C410051CC5DBB0001D6AFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jhonatan Laguna";
+				TargetAttributes = {
+					D0C4100C1CC5DBB0001D6AFF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = WV9YBKM4R8;
+					};
+					D0C410231CC5DBB0001D6AFF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2W4GE6U9VN;
+						TestTargetID = D0C4100C1CC5DBB0001D6AFF;
+					};
+					D0C4102E1CC5DBB0001D6AFF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2W4GE6U9VN;
+						TestTargetID = D0C4100C1CC5DBB0001D6AFF;
+					};
+				};
+			};
+			buildConfigurationList = D0C410081CC5DBB0001D6AFF /* Build configuration list for PBXProject "GuaymasPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0C410041CC5DBB0001D6AFF;
+			productRefGroup = D0C4100E1CC5DBB0001D6AFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0C4100C1CC5DBB0001D6AFF /* GuaymasPro */,
+				D0C410231CC5DBB0001D6AFF /* GuaymasProTests */,
+				D0C4102E1CC5DBB0001D6AFF /* GuaymasProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0C4100B1CC5DBB0001D6AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C4101E1CC5DBB0001D6AFF /* LaunchScreen.storyboard in Resources */,
+				D0C4101B1CC5DBB0001D6AFF /* Assets.xcassets in Resources */,
+				D0C410161CC5DBB0001D6AFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C410221CC5DBB0001D6AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C4102D1CC5DBB0001D6AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0C410091CC5DBB0001D6AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C410131CC5DBB0001D6AFF /* ViewController.swift in Sources */,
+				D0C410111CC5DBB0001D6AFF /* AppDelegate.swift in Sources */,
+				D0C410191CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld in Sources */,
+				B4F64A6E1CC6F84600002F87 /* SwiftyJSON.swift in Sources */,
+				B4F64A721CC6F88100002F87 /* NoticiasViewController.swift in Sources */,
+				B4F64A711CC6F88100002F87 /* NextNoticiasViewController.swift in Sources */,
+				B4F64A781CC6F9FA00002F87 /* Encoding.swift in Sources */,
+				D0FEFE431CC6958700F85155 /* RadioController.swift in Sources */,
+				B4F64A761CC6F91D00002F87 /* NetworkUtility.swift in Sources */,
+				B4F64A741CC6F90200002F87 /* Noticia.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C410201CC5DBB0001D6AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C410291CC5DBB0001D6AFF /* GuaymasProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C4102B1CC5DBB0001D6AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C410341CC5DBB0001D6AFF /* GuaymasProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0C410261CC5DBB0001D6AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C4100C1CC5DBB0001D6AFF /* GuaymasPro */;
+			targetProxy = D0C410251CC5DBB0001D6AFF /* PBXContainerItemProxy */;
+		};
+		D0C410311CC5DBB0001D6AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0C4100C1CC5DBB0001D6AFF /* GuaymasPro */;
+			targetProxy = D0C410301CC5DBB0001D6AFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0C410141CC5DBB0001D6AFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0C410151CC5DBB0001D6AFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0C4101D1CC5DBB0001D6AFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0C410361CC5DBB0001D6AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0C410371CC5DBB0001D6AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0C410391CC5DBB0001D6AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GuaymasPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.saulurias.GuaymasPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0C4103A1CC5DBB0001D6AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GuaymasPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = name.saulurias.GuaymasPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0C4103C1CC5DBB0001D6AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GuaymasProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanlaguna.GuaymasProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuaymasPro.app/GuaymasPro";
+			};
+			name = Debug;
+		};
+		D0C4103D1CC5DBB0001D6AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GuaymasProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanlaguna.GuaymasProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuaymasPro.app/GuaymasPro";
+			};
+			name = Release;
+		};
+		D0C4103F1CC5DBB0001D6AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuaymasProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanlaguna.GuaymasProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GuaymasPro;
+			};
+			name = Debug;
+		};
+		D0C410401CC5DBB0001D6AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuaymasProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jhonatanlaguna.GuaymasProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GuaymasPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0C410081CC5DBB0001D6AFF /* Build configuration list for PBXProject "GuaymasPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C410361CC5DBB0001D6AFF /* Debug */,
+				D0C410371CC5DBB0001D6AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C410381CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C410391CC5DBB0001D6AFF /* Debug */,
+				D0C4103A1CC5DBB0001D6AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C4103B1CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C4103C1CC5DBB0001D6AFF /* Debug */,
+				D0C4103D1CC5DBB0001D6AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0C4103E1CC5DBB0001D6AFF /* Build configuration list for PBXNativeTarget "GuaymasProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0C4103F1CC5DBB0001D6AFF /* Debug */,
+				D0C410401CC5DBB0001D6AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0C410171CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0C410181CC5DBB0001D6AFF /* GuaymasPro.xcdatamodel */,
+			);
+			currentVersion = D0C410181CC5DBB0001D6AFF /* GuaymasPro.xcdatamodel */;
+			path = GuaymasPro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D0C410051CC5DBB0001D6AFF /* Project object */;
+}
