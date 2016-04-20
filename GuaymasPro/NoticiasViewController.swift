@@ -41,11 +41,12 @@ class NoticiasViewController: UITableViewController{
         if(NetworkUtility.isConnectedToNetwork()){
             llamarWebService() //Mandamos llamar la función que crea la conexión al WebService
         }else{
-            let alert = UIAlertView()
-            alert.title = "Alerta"
-            alert.message = "Error de conexion"
-            alert.addButtonWithTitle("OK")
-            alert.show()
+            let alert = UIAlertController(title: "Error de conexion", message: "Revisar Internet", preferredStyle: UIAlertControllerStyle.Alert)
+            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
+                void in print("Ok Pressed")}
+            
+            alert.addAction(action)
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     
