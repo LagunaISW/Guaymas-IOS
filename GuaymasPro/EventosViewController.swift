@@ -66,6 +66,7 @@ class EventosViewController: UITableViewController {
             imagen.image = img //si ya se encuentra en cache se utiliza
         }
         else{ //de lo contrario se descarga
+            print(evento.urlImagenEvento)
             let request = NSMutableURLRequest(URL: NSURL(string: evento.urlImagenEvento)!) //Creamos el Request y asignamos la URL
             let session = NSURLSession.sharedSession() //Creamos la Session
             request.HTTPMethod = "GET" //Especificamos el method a utilizar
@@ -73,12 +74,14 @@ class EventosViewController: UITableViewController {
             let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in //Creamos la tarea
                 dispatch_async(dispatch_get_main_queue(), { // lo corremos en el hilo principal
                     let img = UIImage(data: data!) //Convertimos el data en UIImage
+                    if img != nil {
+                        self.imagenArray.append(img!)
+                        self.imageCache[evento.urlImagenEvento] = img //guardamos la imagen en cache
+                        imagen.image = img //cargamos la imagen en el imageview
+                    }else{
+                        self.imgRespaldo(imagen)
+                    }
                     
-                    self.imagenArray.append(img!)
-                    
-                    
-                    self.imageCache[evento.urlImagenEvento] = img //guardamos la imagen en cache
-                    imagen.image = img //cargamos la imagen en el imageview
                 })
             }) //Asignamos la imagen a su imageview correspondiente
             
@@ -108,8 +111,6 @@ class EventosViewController: UITableViewController {
     
     
     
-    
-    
     /**
      *Funcion que creamos para conectarnos con el WebService
      */
@@ -131,11 +132,11 @@ class EventosViewController: UITableViewController {
                 let contactoEvento = json[i]["contacto"].string
                 let urlImagenEvento = json[i]["imagen"].string
                 
-                //URL IMAGEN
-              let urlImagen =  "http://guaymas.gob.mx/wp-content/themes/aquiesguaymas/img/calendario/\(urlImagenEvento!)"
+                var urlImagen = "http://guaymas.gob.mx/wp-content/themes/aquiesguaymas/img/calendario/accion_civica_guaymas.jpg"
                 
-                
-               // if urlImagenEvento == nil{urlImagenEvento = "http://i.imgur.com/Xco2rc3.png"}
+                if(urlImagenEvento != nil){
+                    urlImagen =  "http://guaymas.gob.mx/wp-content/themes/aquiesguaymas/img/calendario/\(urlImagenEvento!)"
+                }
                 
                 let nuevoEvento = Evento(titulo: tituloEvento!, descripcion: descripcionEvento!, fecha: fechaEvento!, lugar: lugarEvento!, hora: horaEvento!, organizador: organizadorEvento!, contacto: contactoEvento!, urlImagen: urlImagen)
                 
@@ -151,8 +152,30 @@ class EventosViewController: UITableViewController {
         
     }
     
-
-    
-    
+    func imgRespaldo(imagen: UIImageView){
+        let urlImgRespaldo = "http://guaymas.gob.mx/wp-content/themes/aquiesguaymas/img/calendario/accion_civica_guaymas.jpg"
+        if let img = imageCache[urlImgRespaldo]{
+            imagen.image = img
+        }
+        else{
+            let request = NSMutableURLRequest(URL: NSURL(string: urlImgRespaldo)!)
+            let session = NSURLSession.sharedSession()
+            request.HTTPMethod = "GET"
+            
+            let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+                dispatch_async(dispatch_get_main_queue(), {
+                    let img = UIImage(data: data!)
+                    if img != nil {
+                        self.imagenArray.append(img!)
+                        self.imageCache[urlImgRespaldo] = img
+                        imagen.image = img
+                    }
+                    
+                })
+            })
+            
+            task.resume()
+        }
+    }
 
 }

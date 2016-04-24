@@ -142,13 +142,15 @@ class NoticiasViewController: UITableViewController{
      *Funcion que creamos para conectarnos con el WebService
      */
     func llamarWebService(){
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://guaymas.gob.mx/api/get_posts/?count=10&page")!)
+        let pagina = 1
+        let urlBase = "http://guaymas.gob.mx/api/get_posts/?count=20&page=\(pagina)"
+        let request = NSMutableURLRequest(URL: NSURL(string: urlBase)!)
         let session = NSURLSession.sharedSession()
         request.HTTPMethod = "GET"
         
         let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in //Creamos la tarea
             let json = JSON(data: data!)
-            for i in 0 ..< 10 { //Recorremos el arreglo de noticias
+            for i in 0 ..< 20 { //Recorremos el arreglo de noticias
                 let titulo = json["posts"][i]["title"].string   //Accedemos al JSON y obtenemos el titulo en String
                 let content = json["posts"][i]["content"].string?.stringByDecodingHTMLEntities()?.stringByDecodingHTMLEscapeCharacters() //Accedemos al JSON y obtenemos la descripcion en String
                 let date = json["posts"][i]["date"].string  //Accedemos al JSON y obtenemos la fecha en String

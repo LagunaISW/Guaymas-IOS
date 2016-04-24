@@ -44,6 +44,8 @@ extension String {
         s = s.stringByReplacingOccurrencesOfString("&uacute;", withString: "ú")
         s = s.stringByReplacingOccurrencesOfString("&ntilde;", withString: "ñ")
         s = s.stringByReplacingOccurrencesOfString("&#8217;", withString: "'")
+        s = s.stringByReplacingOccurrencesOfString("&ldquo;", withString:  "\"")
+        s = s.stringByReplacingOccurrencesOfString("&rdquo;", withString:  "\"")
         
         return s
     }

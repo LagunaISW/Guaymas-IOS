@@ -18,9 +18,10 @@
 		B4F64A741CC6F90200002F87 /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A731CC6F90200002F87 /* Noticia.swift */; };
 		B4F64A761CC6F91D00002F87 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A751CC6F91D00002F87 /* NetworkUtility.swift */; };
 		B4F64A781CC6F9FA00002F87 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F64A771CC6F9FA00002F87 /* Encoding.swift */; };
+		D09BD69C1CCC8310009A1AAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09BD69B1CCC8310009A1AAF /* Main.storyboard */; };
+		D0AD8AE61CCB1850004E1009 /* ReportesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AD8AE51CCB1850004E1009 /* ReportesViewController.swift */; };
+		D0C3FC261CCD2BCE00EE3A86 /* MasNoticias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C3FC251CCD2BCE00EE3A86 /* MasNoticias.swift */; };
 		D0C410111CC5DBB0001D6AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */; };
-		D0C410131CC5DBB0001D6AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C410121CC5DBB0001D6AFF /* ViewController.swift */; };
-		D0C410161CC5DBB0001D6AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C410141CC5DBB0001D6AFF /* Main.storyboard */; };
 		D0C410191CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0C410171CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld */; };
 		D0C4101B1CC5DBB0001D6AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */; };
 		D0C4101E1CC5DBB0001D6AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */; };
@@ -58,10 +59,11 @@
 		B4F64A731CC6F90200002F87 /* Noticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
 		B4F64A751CC6F91D00002F87 /* NetworkUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		B4F64A771CC6F9FA00002F87 /* Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoding.swift; sourceTree = "<group>"; };
+		D09BD69B1CCC8310009A1AAF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D0AD8AE51CCB1850004E1009 /* ReportesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportesViewController.swift; sourceTree = "<group>"; };
+		D0C3FC251CCD2BCE00EE3A86 /* MasNoticias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasNoticias.swift; sourceTree = "<group>"; };
 		D0C4100D1CC5DBB0001D6AFF /* GuaymasPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuaymasPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0C410121CC5DBB0001D6AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0C410151CC5DBB0001D6AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0C410181CC5DBB0001D6AFF /* GuaymasPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuaymasPro.xcdatamodel; sourceTree = "<group>"; };
 		D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C4101D1CC5DBB0001D6AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,11 +141,11 @@
 				B4F64A6D1CC6F84600002F87 /* SwiftyJSON.swift */,
 				D0FEFE411CC6956B00F85155 /* ViewControllers */,
 				D0C410101CC5DBB0001D6AFF /* AppDelegate.swift */,
-				D0C410141CC5DBB0001D6AFF /* Main.storyboard */,
 				D0C4101A1CC5DBB0001D6AFF /* Assets.xcassets */,
 				D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */,
 				D0C4101F1CC5DBB0001D6AFF /* Info.plist */,
 				D0C410171CC5DBB0001D6AFF /* GuaymasPro.xcdatamodeld */,
+				D09BD69B1CCC8310009A1AAF /* Main.storyboard */,
 			);
 			path = GuaymasPro;
 			sourceTree = "<group>";
@@ -174,8 +176,9 @@
 				B47066661CC7C9E8000D0116 /* NextDirectorioViewController.swift */,
 				B4F64A6F1CC6F88100002F87 /* NextNoticiasViewController.swift */,
 				B4F64A701CC6F88100002F87 /* NoticiasViewController.swift */,
-				D0C410121CC5DBB0001D6AFF /* ViewController.swift */,
 				D0FEFE421CC6958700F85155 /* RadioController.swift */,
+				D0C3FC251CCD2BCE00EE3A86 /* MasNoticias.swift */,
+				D0AD8AE51CCB1850004E1009 /* ReportesViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -248,7 +251,7 @@
 				TargetAttributes = {
 					D0C4100C1CC5DBB0001D6AFF = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = WV9YBKM4R8;
+						DevelopmentTeam = 2W4GE6U9VN;
 					};
 					D0C410231CC5DBB0001D6AFF = {
 						CreatedOnToolsVersion = 7.3;
@@ -287,9 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09BD69C1CCC8310009A1AAF /* Main.storyboard in Resources */,
 				D0C4101E1CC5DBB0001D6AFF /* LaunchScreen.storyboard in Resources */,
 				D0C4101B1CC5DBB0001D6AFF /* Assets.xcassets in Resources */,
-				D0C410161CC5DBB0001D6AFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C410131CC5DBB0001D6AFF /* ViewController.swift in Sources */,
 				D0C410111CC5DBB0001D6AFF /* AppDelegate.swift in Sources */,
 				B47066611CC7C985000D0116 /* Evento.swift in Sources */,
 				B47066631CC7C9A3000D0116 /* Directorio.swift in Sources */,
@@ -322,8 +324,10 @@
 				B4F64A6E1CC6F84600002F87 /* SwiftyJSON.swift in Sources */,
 				B4F64A721CC6F88100002F87 /* NoticiasViewController.swift in Sources */,
 				B47066681CC7C9E8000D0116 /* NextDirectorioViewController.swift in Sources */,
+				D0C3FC261CCD2BCE00EE3A86 /* MasNoticias.swift in Sources */,
 				B4F64A711CC6F88100002F87 /* NextNoticiasViewController.swift in Sources */,
 				B4F64A781CC6F9FA00002F87 /* Encoding.swift in Sources */,
+				D0AD8AE61CCB1850004E1009 /* ReportesViewController.swift in Sources */,
 				B467A1251CC7D47100E22D8D /* EventosViewController.swift in Sources */,
 				B47066671CC7C9E8000D0116 /* DirectorioViewController.swift in Sources */,
 				D0FEFE431CC6958700F85155 /* RadioController.swift in Sources */,
@@ -364,14 +368,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D0C410141CC5DBB0001D6AFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0C410151CC5DBB0001D6AFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0C4101C1CC5DBB0001D6AFF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,11 +467,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GuaymasPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = name.saulurias.GuaymasPro;
+				PRODUCT_BUNDLE_IDENTIFIER = GuaymasPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -484,11 +482,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GuaymasPro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = name.saulurias.GuaymasPro;
+				PRODUCT_BUNDLE_IDENTIFIER = GuaymasPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
